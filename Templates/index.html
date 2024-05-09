@@ -1,0 +1,29 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento -->
+<html lang = "en"> <!-- Declaração do idioma da página (inglês) -->
+<head>
+    <meta charset = "UTF-8"> <!-- Declaração da codificação de caracteres -->
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0"> <!-- Declaração da viewport para dispositivos móveis -->
+    <link rel = "stylesheet" href = "static/style.css">
+    <title>Atividade 8</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+<body>
+    <h1 class = "titulo">VERIFICAR SE O NOME DE USUÁRIO E A SENHA SÃO IGUAIS</h1> <!-- Título principal da página -->
+    <form class = "conteudo" action = "/verificar" method = "post"> <!-- Formulário para verificação -->
+        <label for = "usuario">Digite o nome de usuário:</label> <!-- Rótulo do campo de entrada -->
+        <input type = "text" id = "usuario" name = "usuario" required> <!-- Campo de entrada -->
+        <label class = "espaco" for = "senha">Digite a senha:</label> <!-- Rótulo do campo de entrada -->
+        <input type = "text" id = "senha" name = "senha" required> <!-- Campo de entrada -->
+        <br> <br>
+        <button class = "botao" type = "submit">VERIFICAR</button> <!-- Botão de envio do formulário -->
+    </form>
+    <div class = "resultado">
+        {% if resultado %} <!-- Verifica se há um resultado a ser exibido -->
+           {% if resultado == "Ok!" %}
+              <h3 class = "certo">{{ resultado }}</h3> <!-- Exibe o resultado da verificação -->
+           {% else %}
+              <h3 class = "errado">{{ resultado }}</h3> <!-- Exibe o resultado da verificação -->
+           {% endif %}
+        {% endif %}
+    </div>
+</body>
+</html>

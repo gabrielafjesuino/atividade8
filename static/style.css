@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+}
+
+.titulo {
+    text-align: center;
+    background-color: #F6CADE;
+    color: #C6276F;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.conteudo {
+    text-align: center;
+    background-color: #FFECF4;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.espaco {
+    padding-left: 20px;
+}
+
+.botao {
+    border-radius: 5px;
+    background-color: #C6276F;
+    color: #F6CADE;
+    width: 105px;
+    height: 40px;
+}
+
+.resultado {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.errado {
+    text-align: center;
+    background-color: #FF6D6D;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.certo {
+    text-align: center;
+    background-color: #8ddcae;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
